@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Фронтенд проекта реализующего канбан доску
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Разрабатываемое веб-приложение позволит пользователю вести канбан доски, помогающие выполнять разного рода задачи.
 
-Currently, two official plugins are available:
+Стартовый функционал планируется следующим:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- регистрация и авторизация пользователя
+- возможность создавать канбан доски под разные задачи
+- создание и наполнение карточек внутри доски
+- ведение задачи от старта до окончания выполнения
 
-## Expanding the ESLint configuration
+В планах на доработку значатся:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- возможность командной работы с использованием общей доски
+- поиск карточек по названию
+- назначение ролей среди поставленных задач
 
-- Configure the top-level `parserOptions` property like this:
+Пользовательский интерфейс разрабатывается совместно с фронтенд-разработчиком [Ильёй](https://github.com/Le1ou).
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+За бэкенд данной работы отвечает C#-разработчик [Антон](https://github.com/exp1azy).
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Для оформления визуальной части были взяты следующие макеты:
+
+- [Simple Kanban Board](https://www.figma.com/community/file/892825410260715717)
+- [Kanban Board Template](https://www.figma.com/community/file/1003927294234117670)

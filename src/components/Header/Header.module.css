@@ -1,0 +1,57 @@
+.header {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  position: relative;
+  align-self: center;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 0;
+  /*padding-bottom: 15px;
+  border-bottom: 2px solid #dadada;*/
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.text {
+  margin-top: 0;
+  padding-top: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.2px;
+  border-top: 2px solid #dadada;
+}
+
+.content_main {
+  text-align: center;
+}
+
+.content_other {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.logout {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url(../../images/exit.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 4.5px;
+  right: -85px;
+}

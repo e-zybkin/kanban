@@ -1,0 +1,48 @@
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 250px 25px 25px;
+  grid-template-areas:
+    "name edit delete"
+  ;
+  gap: 5px;
+}
+
+.name {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: name;
+  padding: 2px 5px 0 0;
+  border-right: 1px solid black;
+  text-decoration: none;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button_type_edit {
+  background-image: url(../../assets/images/pencil.svg);
+  grid-area: edit;
+}
+
+.button_type_del {
+  background-image: url(../../assets/images/delete.svg);
+  grid-area:  delete;
+}
